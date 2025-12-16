@@ -1,0 +1,35 @@
+.estilo-section { text-align: left; padding: 3rem 0; }
+.estilo-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px 360px;
+  gap: 32px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.estilo-left h2 {
+  font-size: 1.6rem;
+  margin: 0 0 12px;
+  color: #06243c;
+  font-family: 'Amandine', cursive;
+}
+.estilo-left p { color:#47535d; line-height:1.5; margin-bottom:16px }
+.btn-ghost {
+  background:#e9dfd0; border:0; padding:10px 16px; border-radius:20px; cursor:pointer; margin-bottom:18px
+}
+.empreendimentos h4 { margin:12px 0 8px; color:#6b7580 }
+.logos img { height:28px }
+.estilo-center .photo-card { width:100%; display:flex; justify-content:center }
+.photo-card img { width:320px; height:320px; object-fit:cover; border-radius:18px; box-shadow:0 8px 30px rgba(6,36,60,0.08) }
+.estilo-right .info { border-left:4px solid rgba(6,36,60,0.04); padding-left:18px; margin-bottom:18px }
+.estilo-right h5 { margin:0 0 8px; font-size:1rem; color:#06243c }
+.estilo-right p { margin:0; color:#616e76 }
+
+@media (max-width: 992px) {
+  .estilo-grid { grid-template-columns: 1fr 360px; }
+  .estilo-right { display:none }
+}
+@media (max-width: 640px) {
+  .estilo-grid { grid-template-columns: 1fr; gap:16px }
+  .photo-card img { width:100%; height:auto }
+}

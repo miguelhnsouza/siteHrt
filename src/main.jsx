@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
 
 // Importar páginas
-import Home from "@/pages/Home";
+import DesktopHome from "@/pages/Desktop/Home";
+import MobileHome from "@/pages/Mobile/Home";
+import EstiloHrt from "@/pages/Desktop/EstiloHrt";
+import useIsDesktop from "./hooks/useIsDesktop";
+
 
 function App() {
+  const isDesktop = useIsDesktop();
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={isDesktop ? <DesktopHome /> : <MobileHome />} />
+        <Route path="/estilo" element={isDesktop ? <EstiloHrt /> : <MobileHome />} />
       </Routes>
     </BrowserRouter>
   );
