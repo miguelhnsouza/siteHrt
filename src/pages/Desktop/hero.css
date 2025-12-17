@@ -1,5 +1,9 @@
 .banner {
   position: relative;
+  background-image: url('../../assets/backgroundHero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* VÍDEO */
@@ -20,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #132946 0%, #10142c 100%);
+  background: linear-gradient(135deg, rgba(19, 41, 70, 0.8) 0%, rgba(16, 20, 44, 0.8) 100%);
   z-index: 1;
   
 }

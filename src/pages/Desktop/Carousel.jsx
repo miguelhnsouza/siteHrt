@@ -78,7 +78,7 @@ export default function Carousel() {
                 : pos === 1
                 ? "card card-right"
                 : pos === cardsData.length - 1
-                ? "card card-left"
+                ? "card card-leftt"
                 : "card card-hidden";
             return (
               <article className={cls} key={card.id}>

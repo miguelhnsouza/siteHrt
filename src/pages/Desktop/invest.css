@@ -1,0 +1,135 @@
+.invest-section {
+  background-color: #f8f9fa;
+}
+
+.invest-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0b1a33;
+  line-height: 1.2;
+}
+
+.invest-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.invest-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.invest-card h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0b1a33;
+}
+
+.invest-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.invest-card ul li {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.invest-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+
+
+:root{
+  --card-h: 120px;
+  --gap: 16px;
+  --accent: #0b1a33;
+  --card-w: 560px; 
+  --card-left-w: 120px; 
+}
+
+.invest-carousel {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.carousel-dots {
+  padding-left: 8px;
+  height: calc(var(--card-h) * 3 + var(--gap) * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: var(--card-w);
+}
+
+.carousel-stack {
+  transition: transform .5s cubic-bezier(.2,.8,.2,1);
+}
+
+.invest-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.06);
+  padding: 0; 
+  display: flex;
+  align-items: stretch;
+}
+
+.invest-card h5 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.card-left {
+  width: var(--card-left-w);
+  background: var(--accent);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  flex-shrink: 0;
+}
+
+.invest-card-content {
+  padding: 16px;
+  flex: 1 1 auto;
+}
+
+/* estilo das setas */
+.carousel-controls .btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.carousel-controls .btn:hover {
+  background: rgba(11,26,51,0.06);
+}
+
+@media (max-width: 991px) {
+  .invest-carousel { flex-direction: column; }
+  .carousel-dots { display: none; }
+  .carousel-viewport { width: 100%; }
+}
